@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is my website description">
+  <meta name="keywords" content="web development, web design">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Michael Tawadros</title>
+</head>
+
+<body class="bg-gray-100">
+  <header class="bg-blue-500 text-white p-4">
+    <div class="container mx-auto">
+      <h1 class="text-3xl font-semibold">Michael Tawadros</h1>
+    </div>
+  </header>
+  <div class="container mx-auto p-4 mt-4">
+    <div class="bg-green-100 rounded-lg shadow-md p-6 my-6">
+      <h2 class="text-2xl font-semibold mb-4">Hi! I’m Michael.</h2>
+      <p>I am a software engineer.</p>
+    </div>
+    <!-- Output -->
+      <div class="md my-4">
+        <div class="rounded-lg shadow-md">
+          <div class="p-4">
+            <h2 class="text-xl font-semibold"></h2>
+            <p class="text-gray-700 text-lg mt-2"></p>
+            <ul class="mt-4">
+              <li class="mb-2">
+                <strong>My career:</strong> Founder at 93WordPress since Dec 2006.
+              </li>
+              <li class="mb-2">
+                <strong>Education:</strong> I have a high school degree, class of 2005.
+
+                <span class="text-xs text-white <?= $job['location'] === 'New York' ? 'bg-blue-500' : 'bg-green-500'; ?> rounded-full px-2 py-1 ml-2"></span>
+              </li>
+                <li class="mb-2">
+                  <strong>Here are some other places you can find me:</strong>
+                  <ul>
+                    <li><a href="http://twitter.com/michael8u">Tweets</a></li>
+                    <li><a href="http://github.com/michael8u">Code</a></li>
+                    <li><a href="https://www.linkedin.com/in/michael8u/">Work</a></li>
+                    <li>For writing and speaking requests, you can reach me at mail@8michael.dev.</li>
+                  </ul>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </div>
+</body>
+
+</html>
